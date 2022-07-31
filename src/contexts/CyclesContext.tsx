@@ -51,6 +51,9 @@ const CyclesContextProvider = ({ children }: CyclesContextProviderProps) => {
         }
       }),
     )
+
+    setActiveCycleId(undefined)
+    document.title = 'Ignite Timer'
   }
 
   const setSecondsPassed = (seconds: number) => {
@@ -85,6 +88,8 @@ const CyclesContextProvider = ({ children }: CyclesContextProviderProps) => {
         }
       }),
     )
+
+    setActiveCycleId(undefined)
 
     document.title = 'Ignite Timer'
   }
